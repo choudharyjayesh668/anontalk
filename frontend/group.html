@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groups • AnonTalk</title>
+
+    <link rel="stylesheet" href="group.css" />
+</head>
+<body>
+
+<!-- 🔒 Navbar -->
+<nav class="navbar">
+    <div class="logo">👤 AnonTalk</div>
+
+    <ul class="nav-links">
+        <li onclick="goHome()">Home</li>
+        <li class="active">Groups</li>
+        <li onclick="logoutUser()" style="cursor:pointer;">Logout</li>
+    </ul>
+</nav>
+
+<!-- ✅ Groups Container -->
+<main class="group-container" id="groupContainer">
+    <!-- Groups will load dynamically from group.js -->
+</main>
+
+<!-- ➕ Floating Create Button -->
+<button class="fab" onclick="goCreateGroup()" title="Create Group">
+    +
+</button>
+
+<!-- ✅ Script (must be last) -->
+<script src="group.js"></script>
+</body>
+</html>

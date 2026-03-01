@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat • AnonTalk</title>
+
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo" id="groupTitle">Group Chat</div>
+
+    <ul class="nav-links">
+        <li onclick="goBack()">← Back</li>
+    </ul>
+</nav>
+
+<!-- CHAT AREA -->
+<main class="chat-container">
+    <div id="chatMessages" class="chat-messages"></div>
+
+    <div class="chat-input">
+        <input id="messageInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</main>
+
+<script src="chat.js"></script>
+</body>
+</html>

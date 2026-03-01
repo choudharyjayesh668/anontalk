@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Group • AnonTalk</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">👤 AnonTalk</div>
+
+    <ul class="nav-links">
+        <li onclick="window.location.href='index.html'">Home</li>
+        <li onclick="window.location.href='group.html'">Groups</li>
+        <li class="active">Create</li>
+    </ul>
+</nav>
+
+<div style="padding:40px; display:flex; justify-content:center;">
+    <div style="width:100%; max-width:420px;">
+        <h2>Create New Group</h2>
+
+        <!-- 🔥 THIS INPUT IS CRITICAL -->
+        <input
+                id="groupName"
+                type="text"
+                placeholder="Enter group name"
+                style="width:100%; padding:12px; margin-top:15px; border-radius:10px; border:none;"
+        />
+
+        <!-- 🔥 BUTTON -->
+        <button
+                onclick="createGroup()"
+                style="margin-top:15px; width:100%; padding:12px; border:none; border-radius:10px; cursor:pointer;"
+        >
+            Create Group
+        </button>
+    </div>
+</div>
+
+<!-- ✅ MUST BE LAST -->
+<script src="create-group.js"></script>
+
+</body>
+</html>

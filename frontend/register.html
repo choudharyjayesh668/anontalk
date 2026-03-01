@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AnonTalk Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- same CSS as login -->
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+<div class="logo">AnonTalk</div>
+
+<div class="container">
+    <div class="card">
+        <h2>Create Account</h2>
+
+        <input id="email" type="email" placeholder="Enter email" />
+        <input id="confirmEmail" type="email" placeholder="Confirm email" />
+
+        <input id="password" type="password" placeholder="Enter password" />
+        <input id="confirmPassword" type="password" placeholder="Confirm password" />
+
+        <button onclick="register()">Sign Up</button>
+
+        <p class="signup">
+            Already have account?
+            <span onclick="goLogin()">Login</span>
+        </p>
+    </div>
+</div>
+
+<script src="./register.js"></script>
+</body>
+</html>
